@@ -2,9 +2,9 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 
 const Displaycount = () => {
-    let counter = useSelector((store) => store.counter);
+    let { counterval } = useSelector((store) => store.counterval);
     return (
-        <div>Count is : {counter}</div>
+        <div>Count is : {counterval}</div>
     )
 }
 
